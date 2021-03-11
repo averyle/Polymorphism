@@ -1,1 +1,2 @@
 # polymorphism
+Polymorphism is the idea that an object can take many forms. This technique is most commonly used in function where the function parameter is a general type which represents one of many different actual data types and calling the function results in slightly different behavior depending on the actual type which was passed in. The traditional object-oriented approach to polymorphism uses class inheritance and run-time type information to determine the actual data type and function to call. This is called dynamic polymorphism.
