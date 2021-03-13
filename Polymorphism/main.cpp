@@ -1,17 +1,7 @@
 #include <iostream>
 #include <string>
 
-class Shape {
-public:
-    double _area = 0.0;
-    virtual double area() const;
-};
-
-double Shape::area() const {
-    return _area;
-}
-
-class Rectangle : public Shape {
+class Rectangle {
 public:
     double _width;
     double _height;
@@ -19,33 +9,33 @@ public:
         _width = width;
         _height = height;
     }
-    double area() const override;
+    double area() const;
 };
 
 double Rectangle::area() const {
     return _width * _height;
 }
 
-class Square : public Shape {
+class Square {
 public:
     double _side;
     Square(double side) {
         _side = side;
     }
-    double area() const override;
+    double area() const;
 };
 
 double Square::area() const {
     return _side * _side;
 }
 
-class Circle : public Shape {
+class Circle {
 public:
     double _radius;
     Circle(double radius) {
         _radius = radius;
     }
-    double area() const override;
+    double area() const;
 };
 
 double Circle::area() const {
