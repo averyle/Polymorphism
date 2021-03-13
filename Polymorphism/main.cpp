@@ -42,7 +42,9 @@ double Circle::area() const {
     return _radius * _radius * 3.14;
 }
 
-void printArea(const Shape& shape) { 
+template<typename T>
+
+void printArea(const T& shape) { 
     std::cout << shape.area() << "\n"; 
 }
 
